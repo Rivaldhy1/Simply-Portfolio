@@ -1,11 +1,11 @@
 function App() {
   return (
     <div className="max-h-screen flex flex-col items-center justify-center bg-[#E9EBEC]">
-      <button className="mt-[22px] w-14 h-14 bg-white rounded-full flex items-center justify-center">
+      <button className="transition mt-[22px] w-11 h-11 bg-white rounded-full flex items-center justify-center hover:shadow-md ease-in-out">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
+          width="25"
+          height="25"
           viewBox="0 0 40 40"
           fill="none"
         >
@@ -17,11 +17,11 @@ function App() {
       </button>
 
       <div className="pt-[45px] flex items-center">
-        <div className="w-[135px] h-[135px] rounded-full bg-white border-2 border-yellow-300">
+        <div className="rounded-full bg-white border-2 border-yellow-300 hover:shadow-md cursor-pointer">
           <img
             src="yunjinseng.jpg"
             alt="gambar istri"
-            className="rounded-full p-1"
+            className="w-[135px] h-[135px] rounded-full p-1"
           />
         </div>
         <div className="pl-[30px]">
@@ -44,34 +44,29 @@ function App() {
               href="https://www.tiktok.com/@aaubertt"
               target="_blank"
               rel="noreferrer"
+              className="icon-gap"
             >
-              <img
-                src="/tiktok.svg"
-                alt="tiktok Img"
-                className="icon icon-gap"
-              />
+              <img src="/tiktok.svg" alt="tiktok Img" className="icon" />
             </a>
             <a
               href="https://www.linkedin.com/in/rivaldhy-rizki-akbar-7b0ba2284/"
               target="_blank"
               rel="noreferrer"
+              className="icon-gap"
             >
               <img
                 src="/linkedin.svg"
                 alt="LinkedIn Img"
-                className="w-7 h-7 icon-gap"
+                className="w-7 h-7 "
               />
             </a>
             <a
               href="https://github.com/Rivaldhy1"
               target="_blank"
               rel="noreferrer"
+              className="icon-gap"
             >
-              <img
-                src="/github.svg"
-                alt="Github img"
-                className="icon icon-gap"
-              />
+              <img src="/github.svg" alt="Github img" className="icon" />
             </a>
           </div>
         </div>
