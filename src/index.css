@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .icon {
-  @apply w-6 h-6 cursor-pointer;
+  @apply w-6 h-6 cursor-pointer hover:drop-shadow-lg;
 }
 
 .icon-gap {
@@ -16,4 +16,8 @@
 
 .p-header {
   @apply font-medium text-lg text-[#575757];
+}
+
+.box-content {
+  @apply w-[242px] h-[180px] bg-white rounded-xl cursor-pointer transition ease-in-out shadow-md hover:shadow-none;
 }

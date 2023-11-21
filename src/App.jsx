@@ -1,6 +1,7 @@
 function App() {
   return (
-    <div className="max-h-screen flex flex-col items-center justify-center bg-[#E9EBEC]">
+    <div className="h-auto grid place-items-center bg-[#E9EBEC]">
+      {/* DarkMode button */}
       <button className="transition mt-[22px] w-11 h-11 bg-white rounded-full flex items-center justify-center hover:shadow-md ease-in-out">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -15,13 +16,13 @@ function App() {
           />
         </svg>
       </button>
-
-      <div className="pt-[45px] flex items-center">
+      {/* Header Content */}
+      <div className="mt-[45px] flex items-center">
         <div className="rounded-full bg-white border-2 border-yellow-300 hover:shadow-md cursor-pointer">
           <img
             src="yunjinseng.jpg"
             alt="gambar istri"
-            className="w-[135px] h-[135px] rounded-full p-1"
+            className="w-[135px] h-[135px] rounded-full p-1 border-2 border-yellow-300"
           />
         </div>
         <div className="pl-[30px]">
@@ -71,8 +72,8 @@ function App() {
           </div>
         </div>
       </div>
-
-      <section className="pt-[28px] w-auto h-auto">
+      {/* About Content */}
+      <section className="mt-[18px] w-auto h-auto">
         <div className="p-5 flex justify-between items-center">
           <div className="text-center w-[148px]">
             <h1 className="h1-header">2</h1>
@@ -88,10 +89,10 @@ function App() {
           </div>
         </div>
       </section>
-
-      <section className="pt-6">
+      {/* Cv / Contact Button */}
+      <section className="mt-4">
         <div className="flex items-center justify-between">
-          <button className=" bg-[#FBD144] w-[190px] h-12 rounded-lg text-[#3D3D3D] font-semibold">
+          <button className=" bg-[#FBD144] w-[200px] h-12 rounded-lg text-[#3D3D3D] font-semibold">
             <span className="flex items-center justify-center">
               Download CV{" "}
               <span className="pl-2">
@@ -110,11 +111,63 @@ function App() {
               </span>
             </span>
           </button>
-          <button className="ml-7 bg-white w-[190px] h-12 rounded-lg text-[#3D3D3D] font-semibold">
+          <button className="ml-7 bg-white w-[200px] h-12 rounded-lg text-[#3D3D3D] font-semibold">
             Contact Me
           </button>
         </div>
       </section>
+      {/* Portfolio / Skills Button */}
+      <section className="mt-14 bg-white rounded-xl">
+        <div className="flex items-center p-3">
+          <button className="bg-[#D7D7D7] w-[240px] h-12 rounded-lg text-[#3D3D3D] text-lg font-semibold">
+            Portfolio
+          </button>
+          <button className="bg-white w-[240px] h-12 rounded-lg text-[#3D3D3D] text-lg  font-bold">
+            Skills
+          </button>
+        </div>
+      </section>
+      {/* Project Content */}
+      <section className="m-8 max-w-lg">
+        <div className="grid gap-4 grid-cols-2">
+          <div className="box-content">
+            <a href="">
+              <img src="" alt="" />
+            </a>
+          </div>
+          <div className="box-content">
+            <a href="">
+              <img src="" alt="" />
+            </a>
+          </div>
+          <div className="box-content">
+            <a href="">
+              <img src="" alt="" />
+            </a>
+          </div>
+          <div className="box-content">
+            <a href="">
+              <img src="" alt="" />
+            </a>
+          </div>
+          <div className="box-content">
+            <a href="">
+              <img src="" alt="" />
+            </a>
+          </div>
+          <div className="box-content">
+            <a href="">
+              <img src="" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+      {/* Footer */}
+      <footer className="my-10">
+        <p className="text-center text-[#575757] font-medium ">
+          © Rivaldhy Rizki Akbar. 2023 All rigths reserved
+        </p>
+      </footer>
     </div>
   );
 }
