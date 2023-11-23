@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Button } from "../Button/Button";
+import { Button } from "../elements/Button";
 import { DarkMode } from "../../context/DarkMode";
 
 export const ButtonBox = () => {
