@@ -10,14 +10,6 @@
   @apply ml-5;
 }
 
-.h1-header {
-  @apply font-semibold text-xl text-[#575757];
-}
-
-.p-header {
-  @apply font-medium text-lg text-[#575757];
-}
-
 .box-content {
   @apply w-[242px] h-[180px] bg-white rounded-xl cursor-pointer transition ease-in-out shadow-md hover:shadow-none;
 }
