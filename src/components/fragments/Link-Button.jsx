@@ -14,9 +14,7 @@ export const LinkButton = ({ icon }) => {
       </Button>
       <Button
         className={`${
-          isDarkMode
-            ? "bg-[#171F26] text-[#A3ABB2]"
-            : "bg-transparent text-[#3D3D3D]"
+          isDarkMode ? "bg-[#171F26] text-[#A3ABB2]" : "bg-white text-[#3D3D3D]"
         } ml-7 w-[200px] h-12 rounded-lg text-lg font-semibold `}
       >
         Contact Me

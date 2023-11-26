@@ -9,14 +9,14 @@ export const ButtonBox = () => {
       <Button
         className={`${
           isDarkMode ? "bg-[#0C151D] text-[#A3ABB2]" : "bg-[#D7D7D7]"
-        } w-[240px] h-12 rounded-lg text-lg font-semibold text-[#3D3D3D]`}
+        } xs:max-md:w-[150px] w-[250px] h-12 rounded-lg text-lg font-semibold text-[#3D3D3D]`}
       >
         Portfolio
       </Button>
       <Button
         className={`${
           isDarkMode ? "text-[#A3ABB2]" : "text-[#3D3D3D]"
-        } bg-transparent w-[240px] h-12 rounded-lg  text-lg font-semibold`}
+        } bg-transparent xs:max-md:w-[150px] w-[250px] h-12 rounded-lg text-lg font-semibold`}
       >
         Skills
       </Button>

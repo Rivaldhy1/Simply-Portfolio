@@ -3,6 +3,8 @@ import { DarkMode } from "./context/DarkMode";
 import { AboutContent } from "./components/fragments/About-Content";
 import { LinkButton } from "./components/fragments/link-button";
 import { ButtonBox } from "./components/fragments/ButtonBox";
+import { BoxContents } from "./components/fragments/Box-Content";
+import { MainContent } from "./components/fragments/Main-Content";
 
 const downloadIcon = (
   <svg
@@ -24,13 +26,13 @@ function App() {
 
   return (
     <div
-      className={`h-auto grid place-items-center  ${
+      className={`w-auto h-auto grid place-items-center  ${
         isDarkMode ? "bg-[#0C151D]" : "bg-[#E9EBEC]"
       }`}
     >
       {/* DarkMode button */}
       <button
-        className={`mt-[22px] w-11 h-11 ${
+        className={`mx-auto mt-[22px] w-11 h-11 ${
           isDarkMode ? "bg-[#171F26]" : "bg-white"
         } rounded-full flex items-center justify-center hover:shadow-md ease-in-out`}
         onClick={() => setIsDarkMode(!isDarkMode)}
@@ -50,68 +52,8 @@ function App() {
       </button>
 
       {/* Header Content */}
-      <section className="mt-[45px] flex items-center">
-        <div className="rounded-full bg-white border-2 border-yellow-300 hover:shadow-md cursor-pointer">
-          <img
-            src="yunjinseng.jpg"
-            alt="gambar istri"
-            className="w-[135px] h-[135px] rounded-full p-1 border-2 border-yellow-300"
-          />
-        </div>
-        <div className="pl-[30px]">
-          <h1
-            className={`font-semibold text-3xl text-[#3D3D3D] ${
-              isDarkMode && "text-[#F1F2F4]"
-            }`}
-          >
-            Rivaldhy Rizki A.
-          </h1>
-          <p
-            className={`pt-[8px] font-semibold text-[#575757] text-md ${
-              isDarkMode && "text-[#A3ABB2] "
-            }`}
-          >
-            Software Engineer
-          </p>
-
-          <div className="flex pt-[6px] items-center">
-            <a
-              href="https://www.instagram.com/arrival1l/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="/insta.svg" alt="instagram Img" className="icon " />
-            </a>
-            <a
-              href="https://www.tiktok.com/@aaubertt"
-              target="_blank"
-              rel="noreferrer"
-              className="icon-gap"
-            >
-              <img src="/tiktok.svg" alt="tiktok Img" className="icon" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/rivaldhy-rizki-akbar-7b0ba2284/"
-              target="_blank"
-              rel="noreferrer"
-              className="icon-gap"
-            >
-              <img
-                src="/linkedin.svg"
-                alt="LinkedIn Img"
-                className="w-7 h-7 "
-              />
-            </a>
-            <a
-              href="https://github.com/Rivaldhy1"
-              target="_blank"
-              rel="noreferrer"
-              className="icon-gap"
-            >
-              <img src="/github.svg" alt="Github img" className="icon" />
-            </a>
-          </div>
-        </div>
+      <section className="mt-[45px]">
+        <MainContent />
       </section>
 
       {/* About Content */}
@@ -134,44 +76,17 @@ function App() {
       </section>
 
       {/* Project Content */}
-      <section className="m-8 max-w-lg">
-        <div className="grid gap-4 grid-cols-2">
-          <div className="box-content">
-            <a href="">
-              <img src="" alt="" />
-            </a>
-          </div>
-          <div className="box-content">
-            <a href="">
-              <img src="" alt="" />
-            </a>
-          </div>
-          <div className="box-content">
-            <a href="">
-              <img src="" alt="" />
-            </a>
-          </div>
-          <div className="box-content">
-            <a href="">
-              <img src="" alt="" />
-            </a>
-          </div>
-          <div className="box-content">
-            <a href="">
-              <img src="" alt="" />
-            </a>
-          </div>
-          <div className="box-content">
-            <a href="">
-              <img src="" alt="" />
-            </a>
-          </div>
-        </div>
+      <section className="my-10">
+        <BoxContents />
       </section>
 
       {/* Footer */}
       <footer className="my-10">
-        <p className="text-center text-[#575757] font-medium ">
+        <p
+          className={` ${
+            isDarkMode ? "text-[#A3ABB2]" : "text-[#575757]"
+          } text-center font-medium`}
+        >
           © Rivaldhy Rizki Akbar. 2023 All rigths reserved
         </p>
       </footer>
