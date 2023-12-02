@@ -11,5 +11,9 @@
 }
 
 .box-content {
-  @apply md:w-[250px] h-[180px] bg-white rounded-xl cursor-pointer transition ease-in-out shadow-md hover:shadow-none box-border mb-3;
+  @apply md:w-[250px] h-[180px] bg-white rounded-xl cursor-pointer transition ease-in-out shadow-md box-border mb-3 overflow-hidden;
+}
+
+.box-skills {
+  @apply box-border w-[100px] h-[100px] cursor-pointer rounded-full overflow-hidden bg-transparent shadow-lg;
 }

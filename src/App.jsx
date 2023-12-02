@@ -1,10 +1,9 @@
 import { useContext } from "react";
 import { DarkMode } from "./context/DarkMode";
 import { AboutContent } from "./components/fragments/About-Content";
-import { LinkButton } from "./components/fragments/link-button";
-import { ButtonBox } from "./components/fragments/ButtonBox";
-import { BoxContents } from "./components/fragments/Box-Content";
 import { MainContent } from "./components/fragments/Main-Content";
+import { LinkButton } from "./components/fragments/Link-Button";
+import { BoxContent } from "./components/ui/Box-Content";
 
 const downloadIcon = (
   <svg
@@ -27,7 +26,7 @@ function App() {
 
   return (
     <div
-      className={`box-border xs:flex xs:flex-col md:grid md:place-items-center w-auto h-auto ${
+      className={`box-border xs:flex xs:flex-col md:grid md:place-items-center w-auto min-h-screen ${
         isDarkMode ? "bg-[#0C151D]" : "bg-[#E9EBEC]"
       }`}
     >
@@ -68,14 +67,8 @@ function App() {
       </section>
 
       {/* Portfolio / Skills Button */}
-      <section className="mt-14">
-        <ButtonBox />
-      </section>
-
       {/* Project Content */}
-      <section className="my-10">
-        <BoxContents />
-      </section>
+      <BoxContent />
 
       {/* Footer */}
       <footer className="my-10">
