@@ -15,5 +15,5 @@
 }
 
 .box-skills {
-  @apply box-border w-[100px] h-[100px] cursor-pointer rounded-full overflow-hidden bg-transparent shadow-lg;
+  @apply box-border w-[100px] h-[100px] rounded-full overflow-hidden bg-transparent shadow-lg;
 }

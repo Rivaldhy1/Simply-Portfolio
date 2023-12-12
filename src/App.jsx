@@ -4,6 +4,7 @@ import { AboutContent } from "./components/fragments/About-Content";
 import { MainContent } from "./components/fragments/Main-Content";
 import { LinkButton } from "./components/fragments/Link-Button";
 import { BoxContent } from "./components/ui/Box-Content";
+import { Footer } from "./components/fragments/Footer";
 
 const downloadIcon = (
   <svg
@@ -71,15 +72,7 @@ function App() {
       <BoxContent />
 
       {/* Footer */}
-      <footer className="my-10">
-        <p
-          className={` ${
-            isDarkMode ? "text-[#A3ABB2]" : "text-[#575757]"
-          } text-center font-medium`}
-        >
-          © Rivaldhy Rizki Akbar. 2023 All Rigths Reserved
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 }
